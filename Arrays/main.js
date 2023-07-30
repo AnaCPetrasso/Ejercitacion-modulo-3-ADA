@@ -54,3 +54,34 @@ const invertirCaso = (string) => {
     }
     return newString
 }
+// en Mumuki
+const invertirCaso2 = (string) => {
+    let newString = ''
+    for (const elemento of string) {
+        if (elemento === elemento.toUpperCase()) {
+            newString += elemento.toLowerCase()
+        }
+        else {
+            newString += elemento.toUpperCase()
+        }
+    }
+    return newString
+}
+console.log(invertirCaso('feliz cumple'))
+console.log(invertirCaso2('Ada Lovelace'))
+console.log(invertirCaso('jAvAsCrIpT'))
+// ____________________________________________________gano(tragamonedas)
+//Crear una función gano que tome como argumento un array tragamonedas con 5 símbolos y devuelva true si son iguales y false sino. 
+//Si el array tiene más de 5 símbolos, s´ólo debe comparar los 5 primeros.
+const tragamonedas = ['💫', '💫', '💫', '💫', '💫']
+const gano = tragamonedas => {
+    tragamonedas = tragamonedas.slice(0, 5) //aca considero solo los  5 primeros elementos
+    for (i = 1; i < tragamonedas.length; i++) { //recorro  el aray desde el 1 para comparlo con  los demas
+        if (tragamonedas[i] !== tragamonedas[0]) { 
+            return false
+        } else {
+            return true
+        }
+    }
+}
+console.log(gano(tragamonedas))
