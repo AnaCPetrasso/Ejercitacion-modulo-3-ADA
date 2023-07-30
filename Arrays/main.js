@@ -17,3 +17,15 @@ const obtenerMenorII = numbers => {
     return searchNumber
 }
 console.log(obtenerMenorII(numbers))
+// ____________________________________________________sumar(numeros)
+//Crear una función sumar que tome como argumento un array de números numeros y devuelva la suma de ellos.
+//sumarNumeros([5, 7, 10, 12, 24]) // 58
+
+const sumarNumeros = (numbers) => {
+    let sum = 0
+    for (let i = 0; i < numbers.length ; i++) {
+        sum += numbers[i];
+    }
+    return sum
+}
+console.log(sumarNumeros(numbers))
