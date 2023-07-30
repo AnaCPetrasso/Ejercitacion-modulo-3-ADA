@@ -29,3 +29,12 @@ const sumarNumeros = (numbers) => {
     return sum
 }
 console.log(sumarNumeros(numbers))
+// ____________________________________________________contiene(numero, numeros)
+//Crear una función contiene que tome como argumentos un número numero y un array de números numeros y devuelva true 
+//o false dependiendo de si dicho numero se encuentra en el array de numeros
+//https://es.javascript.info/
+const contiene = (number, numbers) => {
+    return numbers.includes(number, 0)
+}
+console.log(contiene(9, numbers))
+console.log(contiene(8, numbers))
