@@ -23,7 +23,7 @@ console.log(obtenerMenorII(numbers))
 
 const sumarNumeros = (numbers) => {
     let sum = 0
-    for (let i = 0; i < numbers.length ; i++) {
+    for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
     }
     return sum
@@ -77,7 +77,7 @@ const tragamonedas = ['💫', '💫', '💫', '💫', '💫']
 const gano = tragamonedas => {
     tragamonedas = tragamonedas.slice(0, 5) //aca considero solo los  5 primeros elementos
     for (i = 1; i < tragamonedas.length; i++) { //recorro  el aray desde el 1 para comparlo con  los demas
-        if (tragamonedas[i] !== tragamonedas[0]) { 
+        if (tragamonedas[i] !== tragamonedas[0]) {
             return false
         } else {
             return true
@@ -286,3 +286,58 @@ console.log(jugarPiedraPapelTijeras(
     'Grace',
     ['piedra', 'papel', 'papel', 'piedra', 'tijera'],
     ['papel', 'piedra', 'tijera', 'tijera', 'papel']))
+
+//   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Ejercicios con DOM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Para los siguientes ejercicios, no es necesario darle estilos más allá de los básicos que requiera el ejercicio para visualizarse correctamente. Se pueden utilizar funciones realizadas en los ejercicios previos.
+
+// 📝-------------------------------------------------------------------------- Lista de tareas
+// Crear un programa que muestre:
+
+// un input de texto
+// un botón que diga Agregar tarea
+// una lista ul
+// Cuando se hace click en el botón, se debe agregar el valor del input a un array y actualizar la lista.
+
+// Para actualizar la lista se debe:
+
+// borrar todo lo que contenga
+// recorrer el array y por cada ítem
+// insertar un ítem de lista li con el valor del ítem del array
+
+
+
+
+
+// 🔍 Buscador
+// Crear un programa que muestre:
+
+// un input de texto
+// una lista ul
+// El programa debe tener como datos un array con strings con distintas palabras, y al inicializarse la lista debe mostrar las palabras del array como ítems de lista.
+
+// Al escribir en el input, se debe actualizar la lista para mostrar aquellas palabras que contengan como substring lo ingresado, ignorando mayúsculas y minúsuculas. Es decir, si se busca script y JavaScript es un string dentro del array, se debe mostrar.
+
+// Para actualizar la lista se debe:
+
+// borrar todo lo que contenga
+// recorrer el array y por cada ítem
+// insertar un ítem de lista li con el valor del ítem del array
+// Cuando el input no tienen ningún valor ingresado, la lista debe mostrar todos los ítems del array.
+
+// TIP: vas a necesitar dos arrays, uno para todas las palabras y otro para los resultados de búsqueda.
+
+// 📈 Total de gastos
+// Crear un programa que muestre:
+
+// un input de números
+// un botón que diga Agregar gasto/ganancia
+// una lista ul
+// un elemento p
+// Cuando se hace click en el botón, se debe agregar el valor del input a un array y actualizar la lista y el elemento p.
+
+// Para actualizar la lista se debe:
+
+// borrar todo lo que contenga
+// recorrer el array y por cada ítem
+// insertar un ítem de lista li con el valor del ítem del array
+// El elemento p se actualiza con el total de la suma de los valores del array.
